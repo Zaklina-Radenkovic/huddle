@@ -1,0 +1,44 @@
+%heading {
+	font-family: $font-display;
+	color: $color-cyan-dark;
+	text-transform: capitalize;
+}
+
+.heading-primary {
+	@extend %heading;
+	font-size: 2rem;
+	font-weight: 600;
+	
+	@include respond(tab-land) {
+		font-size: 1.8rem;
+	}
+
+	@include respond(tab-port) {
+		font-size: 1.6rem;
+	}
+}
+
+.heading-secondary {
+	@extend %heading;
+	font-size: 1.8rem;
+
+	@include respond(tab-port) {
+		font-size: 1.6rem;
+	}
+}
+
+.heading-tertiary {
+	@extend %heading;
+	font-size: 1.6rem;
+
+	@include respond(tab-land) {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	@include respond(phone-sm) {
+		font-size: 1.2rem;
+	}
+}
+
+

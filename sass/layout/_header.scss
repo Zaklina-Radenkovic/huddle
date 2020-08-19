@@ -1,0 +1,32 @@
+.header {
+	@include flex { 
+		justify-content: space-between;
+	 }
+	
+	padding-bottom: 3.6rem;
+
+	.logo {
+		height: 40px;
+
+		@include respond(phone) {
+			height: 20px;
+		}
+	} 
+
+	&__btn:link,
+	&__btn:visited {
+		padding: 0.9rem 3.72rem;
+		background-color: $color-white;
+		color: $color-cyan-dark;
+		font-size: .77rem;
+		box-shadow: $box-shadow;
+
+		&:hover {
+			background-color: darken($color-white, 1.1%);
+		}
+
+		@include respond(phone) {
+			font-size: 100%;
+		}
+	}
+}

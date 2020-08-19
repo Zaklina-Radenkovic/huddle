@@ -1,0 +1,71 @@
+.btn,
+.btn:link,
+.btn:visited {
+	border: none;
+	font-family: $font-primary;
+	font-size: .88rem;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 700;
+	border-radius: $border;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: capitalize;
+	background-color: $color-primary;
+	color: $color-cyan-light;
+	transition: all .2s;
+
+	&:hover {
+		box-shadow: $box-shadow;
+		background-color: darken($color-primary, 1.1%);
+	}
+
+	@include respond(phone) {
+		font-size: 100%;
+	}
+}
+
+.cta {
+	width: 40%;
+	margin: 0 auto;
+	margin-top: -6rem;
+	padding: 4.4rem 8% 2.7rem;
+	box-shadow: 0.5px 1px .5rem rgba($color-gray-blue, .2);
+	border-radius: $border / 2;
+	position: relative;
+	background-color: $color-white;
+
+	
+	@include flex { 
+		flex-direction: column;
+		justify-content: center;
+	 }
+
+	@include respond(tab-land) {
+		padding-top: 3.5rem;
+	}
+
+	@include respond(tab-port) {
+		padding-top: 2.5rem;
+		width: 50%;
+	}
+
+	@include respond(phone) {
+		padding: 3rem 8% 2rem;
+		width: 60%;
+	}
+
+	@include respond(phone-sm) {
+		width: 75%;
+	}
+
+	&__btn:link,
+	&__btn:visited {
+		align-self: center;
+		padding: 1rem 5.2rem;
+		box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.2);
+		margin-top: 25px;
+	}
+}
+
+
