@@ -1,6 +1,3 @@
-/*$box-shadow: 0 4.1px 20.1px -6px rgba(0, 0, 0, 0.1),
-		  0 13.6px 67.7px -6px rgba(0, 0, 0, 0.06),
-		  0 61px 303px -6px rgba(0, 0, 0, 0.04);*/
 *,
 *::before,
 *::after {
@@ -331,13 +328,7 @@ body {
   .footer__item--info {
     display: flex;
     align-items: flex-start;
-    /*a[href^="mail"] {
-			border-bottom: 1px solid $color-cyan-light;
-		}
-
-		img[alt="email"] {
-			border-top: 5px solid transparent;
-		}*/ }
+    }
     .footer__item--info img {
       margin-right: 15px; }
     .footer__item--info:first-child img {
